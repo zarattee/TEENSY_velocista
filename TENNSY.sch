@@ -17,23 +17,23 @@ $EndDescr
 $Comp
 L EESTN5:Teensy4.0 U1
 U 1 1 5FC852D2
-P 2000 2400
-F 0 "U1" H 2000 4015 50  0000 C CNN
-F 1 "Teensy4.0" H 2000 3924 50  0000 C CNN
-F 2 "EESTN5:Teensy40" H 1600 2600 50  0001 C CNN
-F 3 "" H 1600 2600 50  0001 C CNN
-	1    2000 2400
+P 2150 2400
+F 0 "U1" H 2150 4015 50  0000 C CNN
+F 1 "Teensy4.0" H 2150 3924 50  0000 C CNN
+F 2 "EESTN5:Teensy40" H 1750 2600 50  0001 C CNN
+F 3 "" H 1750 2600 50  0001 C CNN
+	1    2150 2400
 	1    0    0    -1  
 $EndComp
 $Comp
 L EESTN5:DRV8872 U2
 U 1 1 5FE72055
-P 6600 5800
-F 0 "U2" H 6600 6197 60  0000 C CNN
-F 1 "DRV8872" H 6600 6091 60  0000 C CNN
-F 2 "EESTN5:SSOP-8" H 6600 5550 60  0001 C CNN
-F 3 "" H 6600 5550 60  0001 C CNN
-	1    6600 5800
+P 5600 5950
+F 0 "U2" H 5600 6347 60  0000 C CNN
+F 1 "DRV8872" H 5600 6241 60  0000 C CNN
+F 2 "EESTN5:SSOP-8" H 5600 5700 60  0001 C CNN
+F 3 "" H 5600 5700 60  0001 C CNN
+	1    5600 5950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -124,8 +124,6 @@ Wire Wire Line
 Connection ~ 7550 1450
 Wire Wire Line
 	7550 1450 7550 1300
-Text Label 7900 1450 0    50   ~ 0
-2
 $Comp
 L EESTN5:QRE1113 U5
 U 1 1 5FE79995
@@ -214,8 +212,6 @@ Wire Wire Line
 Connection ~ 8650 1450
 Wire Wire Line
 	8650 1450 8650 1300
-Text Label 9000 1450 0    50   ~ 0
-3
 $Comp
 L EESTN5:QRE1113 U6
 U 1 1 5FE7E5CF
@@ -304,8 +300,6 @@ Wire Wire Line
 Connection ~ 9650 1350
 Wire Wire Line
 	9650 1350 9650 1200
-Text Label 10000 1350 0    50   ~ 0
-4
 $Comp
 L EESTN5:QRE1113 U7
 U 1 1 5FE7E614
@@ -394,8 +388,6 @@ Wire Wire Line
 Connection ~ 10750 1350
 Wire Wire Line
 	10750 1350 10750 1200
-Text Label 11100 1350 0    50   ~ 0
-5
 $Comp
 L EESTN5:QRE1113 U4
 U 1 1 5FE83EA5
@@ -484,6 +476,75 @@ Wire Wire Line
 Connection ~ 6600 1450
 Wire Wire Line
 	6600 1450 6600 1300
+Wire Wire Line
+	1050 1050 950  1050
+Wire Wire Line
+	950  1050 950  2650
+Wire Wire Line
+	1050 2650 950  2650
+Connection ~ 950  2650
+Wire Wire Line
+	950  2650 950  4200
+Wire Wire Line
+	3250 3450 3350 3450
+Wire Wire Line
+	3350 3450 3350 4200
+$Comp
+L power:GND #PWR0111
+U 1 1 5FE4CD48
+P 3350 4200
+F 0 "#PWR0111" H 3350 3950 50  0001 C CNN
+F 1 "GND" H 3355 4027 50  0000 C CNN
+F 2 "" H 3350 4200 50  0001 C CNN
+F 3 "" H 3350 4200 50  0001 C CNN
+	1    3350 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5FE4D088
+P 950 4200
+F 0 "#PWR0112" H 950 3950 50  0001 C CNN
+F 1 "GND" H 955 4027 50  0000 C CNN
+F 2 "" H 950 4200 50  0001 C CNN
+F 3 "" H 950 4200 50  0001 C CNN
+	1    950  4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 3750 850  3750
+Wire Wire Line
+	850  3650 1050 3650
+Wire Wire Line
+	1050 3550 850  3550
+Wire Wire Line
+	850  3450 1050 3450
+Wire Wire Line
+	1050 3350 850  3350
+Wire Wire Line
+	850  3250 1050 3250
+Wire Wire Line
+	1050 3150 850  3150
+Wire Wire Line
+	850  3050 1050 3050
+Text Label 850  3050 2    50   ~ 0
+A0
+Text Label 850  3150 2    50   ~ 0
+A1
+Text Label 850  3250 2    50   ~ 0
+A2
+Text Label 850  3350 2    50   ~ 0
+A3
+Text Label 850  3650 2    50   ~ 0
+A6
+Text Label 11100 1350 0    50   ~ 0
+A0
 Text Label 6950 1450 0    50   ~ 0
-1
+A6
+Text Label 7900 1450 0    50   ~ 0
+A3
+Text Label 9000 1450 0    50   ~ 0
+A2
+Text Label 10000 1350 0    50   ~ 0
+A1
 $EndSCHEMATC
