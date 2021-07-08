@@ -1,3 +1,6 @@
 (fp_lib_table
   (lib (name TEENSY_velocista)(type KiCad)(uri ${KIPRJMOD}/TEENSY_velocista.pretty)(options "")(descr ""))
+  (lib (name Button_Switch_Keyboard)(type KiCad)(uri ${KISYSMOD}/Button_Switch_Keyboard.pretty)(options "")(descr ""))
+  (lib (name Button_Switch_SMD)(type KiCad)(uri ${KISYSMOD}/Button_Switch_SMD.pretty)(options "")(descr ""))
+  (lib (name Button_Switch_THT)(type KiCad)(uri ${KISYSMOD}/Button_Switch_THT.pretty)(options "")(descr ""))
 )
